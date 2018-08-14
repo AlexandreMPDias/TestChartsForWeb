@@ -1,20 +1,19 @@
 <template>
-    <div class="text-center w-100">
+    <div>
         <page :title="header"></page>
-        <div class="w-100">
+        <div class="text-center d-flex flex-column pt-4 pb-4 m-auto w-100">
             <GChart
-                class="w-75"
                 type="ColumnChart" 
                 :data="data" 
                 :options="options.bar" 
             />
-            <div class="w-50" @mouseover="spin">
+            <div @mouseover="spin">
                 <GChart
                     type="PieChart" 
                     :settings="settings.donut"
                     :data="data" 
                     :options="options.pie" 
-                    :resizeDebounce="500"
+                    :resizeDebounce="1500"
                 />
             </div>
             <!--<GChart
@@ -75,6 +74,7 @@ export default {
                         tooltip: {
                             //isHtml: true
                         },
+                        height: "100%",
                         colors: ['#e0440e', '#e6693e', '#ec8f6e', '#f3b49f', '#f6c7b6']
                     },
                     pie: {
@@ -83,6 +83,7 @@ export default {
                         colors: ['#e0440e', '#e6693e', '#ec8f6e', '#f3b49f', '#f6c7b6'],
                         pieHole: 0.2,
                         pieStartAngle: 50,
+                        width: "100%"
                     }
             },
             header: 'Google Charts'

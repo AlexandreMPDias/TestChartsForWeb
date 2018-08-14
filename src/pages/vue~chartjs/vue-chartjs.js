@@ -13,9 +13,9 @@ var mdText = function() {
 ---
 
 ## Requirements
-Node.js
-npm  
-npm's vue-chartjs and chart.js packages
+- Node.js
+- npm  
+- npm's vue-chartjs and chart.js packages
 
 ---
   

@@ -2,8 +2,8 @@
 	<div id="app">
 		<nav class="navbar navbar-dark bg-dark">
 			<router-link :to="'/'">
-				<div style="height: 80px;">
-					<img class="h-100 pl-5" src=".\assets\logo\logo_amarelo.svg" alt="Italian Trulli">
+				<div style="height: 60px;">
+					<img class="ml-5 pr-1 h-100 border border-warning rounded" src="./assets/logo/logo_amarelo.svg" alt="Italian Trulli">
 				</div>
 			</router-link>
 			<div class="btn-toolbar d-flex flex-row-reverse" role="toolbar" aria-label="Toolbar with button groups">

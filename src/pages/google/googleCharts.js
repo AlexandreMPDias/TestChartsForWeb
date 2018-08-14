@@ -25,9 +25,9 @@ var mdText = function() {
 ---
 
 ## Requirements
-Node.js
-npm  
-npm's vue-google-charts package
+- Node.js
+- npm  
+- npm's vue-google-charts package
 
 ---
   
@@ -45,6 +45,11 @@ N/A
 -Somewhat unique configuration and data_input for each graph.
 -Flexible Graphs
 -Hard to create really stylish graphs.
+
+---
+
+## Problems
+-Doesnt work with no/slow internet.
 `;
 }
 
