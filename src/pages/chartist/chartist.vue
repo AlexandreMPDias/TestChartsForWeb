@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1 class="alert alert-warning" role="alert">Chartist</h1>
+        <page :title="title"></page>
         <div ref="chart1" id="chart1" class="ct-chart ct-perfect-fourth"/>
         <div ref="chart2"/>
         <div ref="chart3"/>
@@ -9,13 +9,17 @@
 
 
 <script>
+import Page from '../../components/shared/Display';
 import chart from './chartist';
 
-
 export default {
+        components: {
+        page: Page
+    },
     data() {
         return {
-            dataChar: chart.data
+            dataChar: chart.data,
+            title: "Chartist"
         }
     },
     mounted () {

@@ -15,7 +15,7 @@ export default {
 
     data() {
         return {
-            title: 'Home'
+            title: 'D3js'
         }
     },
 }
